@@ -13,11 +13,16 @@ function civicrm_api3_event_generateagendabe ($params) {
   $locs = civicrm_api3("LocBlock","get",array("options"=>array("limit",1000)));
   $locs = $locs["values"];
 
+  $types = civicrm_api3('Event', 'getoptions', array(
+   'field' => "event_type_id",
+  ));
+  $types= $type["values"];
+
   $xml = new SimpleXMLElement('<events/>');
   foreach ($r["values"] as $event) {
     $xe = $xml->addChild("event");
     $xe->addChild("id",$event["id"]);
-    $xe->addChild("category",$event["event_type"]);
+    $xe->addChild("category",$types[$event["event_type_id"]]);
     $d=$xe->addChild("detail");
     $d->addChild("title",$event["title"]); 
     $d->addChild("shortDescription",CRM_Utils_String::htmlToText($event["intro_text"])); 
