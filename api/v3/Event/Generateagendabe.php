@@ -16,7 +16,7 @@ function civicrm_api3_event_generateagendabe ($params) {
   $types = civicrm_api3('Event', 'getoptions', array(
    'field' => "event_type_id",
   ));
-  $types= $type["values"];
+  $types= $types["values"];
 
   $xml = new SimpleXMLElement('<events/>');
   foreach ($r["values"] as $event) {
