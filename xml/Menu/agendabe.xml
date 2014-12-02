@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/event/agendabe</path>
+    <page_callback>CRM_Agendabe_Page_AgendaBE</page_callback>
+    <title>AgendaBE</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>
