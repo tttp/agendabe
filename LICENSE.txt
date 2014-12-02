@@ -1,4 +1,4 @@
-Package: agendabe.tttp.eu
+Package: eu.tttp.agendabe
 Copyright (C) 2014, xavier <civicrm@tttp.eu>
 Licensed under the GNU Affero Public License 3.0 (below).
 

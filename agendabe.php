@@ -1,14 +1,14 @@
 <?php
 
-require_once 'eu.civix.php';
+require_once 'agendabe.civix.php';
 
 /**
  * Implementation of hook_civicrm_config
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_config
  */
-function eu_civicrm_config(&$config) {
-  _eu_civix_civicrm_config($config);
+function agendabe_civicrm_config(&$config) {
+  _agendabe_civix_civicrm_config($config);
 }
 
 /**
@@ -18,8 +18,8 @@ function eu_civicrm_config(&$config) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_xmlMenu
  */
-function eu_civicrm_xmlMenu(&$files) {
-  _eu_civix_civicrm_xmlMenu($files);
+function agendabe_civicrm_xmlMenu(&$files) {
+  _agendabe_civix_civicrm_xmlMenu($files);
 }
 
 /**
@@ -27,8 +27,8 @@ function eu_civicrm_xmlMenu(&$files) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_install
  */
-function eu_civicrm_install() {
-  _eu_civix_civicrm_install();
+function agendabe_civicrm_install() {
+  _agendabe_civix_civicrm_install();
 }
 
 /**
@@ -36,8 +36,8 @@ function eu_civicrm_install() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_uninstall
  */
-function eu_civicrm_uninstall() {
-  _eu_civix_civicrm_uninstall();
+function agendabe_civicrm_uninstall() {
+  _agendabe_civix_civicrm_uninstall();
 }
 
 /**
@@ -45,8 +45,8 @@ function eu_civicrm_uninstall() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_enable
  */
-function eu_civicrm_enable() {
-  _eu_civix_civicrm_enable();
+function agendabe_civicrm_enable() {
+  _agendabe_civix_civicrm_enable();
 }
 
 /**
@@ -54,8 +54,8 @@ function eu_civicrm_enable() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_disable
  */
-function eu_civicrm_disable() {
-  _eu_civix_civicrm_disable();
+function agendabe_civicrm_disable() {
+  _agendabe_civix_civicrm_disable();
 }
 
 /**
@@ -69,8 +69,8 @@ function eu_civicrm_disable() {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_upgrade
  */
-function eu_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
-  return _eu_civix_civicrm_upgrade($op, $queue);
+function agendabe_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
+  return _agendabe_civix_civicrm_upgrade($op, $queue);
 }
 
 /**
@@ -81,8 +81,8 @@ function eu_civicrm_upgrade($op, CRM_Queue_Queue $queue = NULL) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_managed
  */
-function eu_civicrm_managed(&$entities) {
-  _eu_civix_civicrm_managed($entities);
+function agendabe_civicrm_managed(&$entities) {
+  _agendabe_civix_civicrm_managed($entities);
 }
 
 /**
@@ -94,8 +94,8 @@ function eu_civicrm_managed(&$entities) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_caseTypes
  */
-function eu_civicrm_caseTypes(&$caseTypes) {
-  _eu_civix_civicrm_caseTypes($caseTypes);
+function agendabe_civicrm_caseTypes(&$caseTypes) {
+  _agendabe_civix_civicrm_caseTypes($caseTypes);
 }
 
 /**
@@ -103,6 +103,6 @@ function eu_civicrm_caseTypes(&$caseTypes) {
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_alterSettingsFolders
  */
-function eu_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
-  _eu_civix_civicrm_alterSettingsFolders($metaDataFolders);
+function agendabe_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
+  _agendabe_civix_civicrm_alterSettingsFolders($metaDataFolders);
 }
