@@ -1,7 +1,7 @@
 <?php
 
 function civicrm_api3_event_generateagendabe ($params) {
-  $fields="title,start_date,intro_text,description,end_date,event_type_id,is_monetary,loc_block_id";
+  $fields="title,start_date,event_type,intro_text,description,end_date,event_type_id,is_monetary,loc_block_id";
   //$fields="title,start_date,loc_block_id";
 
   $r = civicrm_api3 ("event","get", array (
@@ -17,6 +17,7 @@ function civicrm_api3_event_generateagendabe ($params) {
   foreach ($r["values"] as $event) {
     $xe = $xml->addChild("event");
     $xe->addChild("id",$event["id"]);
+    $xe->addChild("category",$event["event_type"]);
     $d=$xe->addChild("detail");
     $d->addChild("title",$event["title"]); 
     $d->addChild("shortDescription",CRM_Utils_String::htmlToText($event["intro_text"])); 
