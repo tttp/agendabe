@@ -24,9 +24,10 @@ function civicrm_api3_event_generateagendabe ($params) {
     $xe->addChild("id",$event["id"]);
     $xe->addChild("category",$types[$event["event_type_id"]]);
     $d=$xe->addChild("detail");
+    $d->addAttribute("language","NL");
     $d->addChild("title",$event["title"]); 
-    $d->addChild("shortDescription",CRM_Utils_String::htmlToText($event["intro_text"])); 
-    $d->addChild("longDescription",CRM_Utils_String::htmlToText($event["description"])); 
+    $d->addChild("shortdescription",CRM_Utils_String::htmlToText($event["intro_text"])); 
+    $d->addChild("longdescription",CRM_Utils_String::htmlToText($event["description"])); 
 
     $d = $xe->addChild("dates");
     $d1 = $d->addChild("date");
